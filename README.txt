@@ -12,6 +12,8 @@ Prerequisites
 you need the following packages installed:
 
     1. sphinx
+    2. coverage
+    3. nose
 
 
 Installation
@@ -35,3 +37,12 @@ create documentation:
 
     1. make html
     2. open doc/html/index.html
+
+run tests with coverage
+
+    1. nosetests --with-coverage
+
+create distribution (source dist)
+
+    1. create documentation
+    1. ./setup.py sdist

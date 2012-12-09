@@ -54,9 +54,9 @@ class SimpleClass:
         """simple useless function.
 
         :param thing: some thing
-        :returns: never
+        :returns: 'three'
         :raises: your salary
 
         """
 
-        pass
+        return 'test'

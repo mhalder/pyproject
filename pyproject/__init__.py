@@ -19,6 +19,6 @@
 
 """This is a very basic example of docstrings.
 
-.. moduleauthor:: Martin Halder <martin.halder@gmail.com>
+    :note: only for demonstration
 
 """

@@ -44,5 +44,5 @@ run tests with coverage
 
 create distribution (source dist)
 
-    1. create documentation
-    1. ./setup.py sdist
+    1. create documentation (see above)
+    2. ./setup.py sdist

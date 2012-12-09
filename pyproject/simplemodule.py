@@ -26,9 +26,15 @@ class SimpleClass:
 
         """Set default attribute values only.
 
-        Keyword arguments:
-        spam -- a processed meat product
-        eggs -- a fine breakfast for lumberjacks
+        This class does nothing except setting the
+        default attributes.
+
+        :param spam: a processed meat product
+        :param eggs: a fine breakfast for lumberjacks
+
+        :returns: nothing
+
+        :raises: nothing
 
         """
 

@@ -9,10 +9,10 @@ pyproject Package
     :undoc-members:
     :show-inheritance:
 
-:mod:`simpleclass` Module
--------------------------
+:mod:`simplemodule` Module
+--------------------------
 
-.. automodule:: pyproject.simpleclass
+.. automodule:: pyproject.simplemodule
     :members:
     :undoc-members:
     :show-inheritance:

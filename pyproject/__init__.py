@@ -17,7 +17,8 @@
 # You should have received a copy of the GNU General Public License
 # along with PyProject. If not, see <http://www.gnu.org/licenses/>.
 
-"""This is a very basic example of docstrings."""
+"""This is a very basic example of docstrings.
 
-__author__ = 'Martin Halder'
-__version__ = '0.1.0'
+.. moduleauthor:: Martin Halder <martin.halder@gmail.com>
+
+"""

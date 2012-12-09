@@ -16,3 +16,21 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with PyProject. If not, see <http://www.gnu.org/licenses/>.
+
+
+class SimpleClass:
+
+    """Demonstrate class docstrings."""
+
+    def __init__(self, spam=1, eggs=2):
+
+        """Set default attribute values only.
+
+        Keyword arguments:
+        spam -- a processed meat product
+        eggs -- a fine breakfast for lumberjacks
+
+        """
+
+        self.spam = spam
+        self.eggs = eggs

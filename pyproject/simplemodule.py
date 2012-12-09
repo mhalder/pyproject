@@ -18,19 +18,27 @@
 # along with PyProject. If not, see <http://www.gnu.org/licenses/>.
 
 
+"""This is a very simple module.
+
+    :module: simplemodule
+    :moduleauthor: Martin Halder <martin.halder@gmail.com>
+
+"""
+
+
 class SimpleClass:
 
     """Demonstrate class docstrings."""
 
-    def __init__(self, spam=1, eggs=2):
+    def __init__(self, one=1, two=2):
 
         """Set default attribute values only.
 
         This class does nothing except setting the
         default attributes.
 
-        :param spam: a processed meat product
-        :param eggs: a fine breakfast for lumberjacks
+        :param one: first useless parameter
+        :param two: second one
 
         :returns: nothing
 
@@ -38,5 +46,17 @@ class SimpleClass:
 
         """
 
-        self.spam = spam
-        self.eggs = eggs
+        self.one = one
+        self.two = two
+
+    def do_something(self, thing=1):
+
+        """simple useless function.
+
+        :param thing: some thing
+        :returns: never
+        :raises: your salary
+
+        """
+
+        pass

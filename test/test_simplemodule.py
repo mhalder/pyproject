@@ -26,7 +26,7 @@
 """
 
 from unittest import TestCase
-from simplemodule import SimpleClass
+from pyproject.simplemodule import SimpleClass
 
 
 class test_SimpleClass(TestCase):

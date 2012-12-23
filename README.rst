@@ -36,7 +36,7 @@ Usage
 create documentation:
 
     1. make html
-    2. open doc/html/index.html
+    2. open doc/gen/html/index.html
 
 run tests with coverage
 

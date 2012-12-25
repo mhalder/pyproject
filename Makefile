@@ -4,7 +4,7 @@
 PACKAGE_DIR=pyproject
 PROJECT_DIR := $(shell pwd)
 PYFILES:=$(shell find ${PACKAGE_DIR} -name '*.py')
-BINFILES:=$(ls bin/)
+BINFILES:=$(shell find bin -type f)
 
 DOMAIN_NAME=pyproject
 MAINTAINER_EMAIL=Martin Halder <martin.halder@gmail.com>
@@ -42,10 +42,7 @@ html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf 
 	PYTHONPATH=$(PROJECT_DIR) $(MAKE) -C doc $@
 
 pot:
-	echo $(PYFILES) $(BINARY_FILES) | xargs \
-		xgettext --package-name "$(DOMAIN_NAME)" \
-		--msgid-bugs-address "$(MAINTAINER_EMAIL)" \
-		--copyright-holder "$(MAINTAINER_EMAIL)" \
-		--from-code UTF-8 --sort-by-file --add-comments=i18n: \
+	echo $(PYFILES) $(BINFILES) | xargs \
+		pygettext --add-location \
 		-d $(DOMAIN_NAME) -p i18n -o ${DOMAIN_NAME}.pot
 	$(PYHTON) i18n/posplit i18n/${DOMAIN_NAME}.pot

@@ -25,6 +25,8 @@
 
 """
 
+from i18n import _
+
 
 class SimpleClass:
 
@@ -59,4 +61,4 @@ class SimpleClass:
 
         """
 
-        return 'test'
+        return _('test')

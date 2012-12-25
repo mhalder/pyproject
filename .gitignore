@@ -1,3 +1,6 @@
 *.pyc
 doc/*
+~*
+*.swp
 .coverage
+i18n/*.pot

@@ -1,7 +1,13 @@
 # Makefile for the python project
 #
 
+PACKAGE_DIR=pyproject
 PROJECT_DIR := $(shell pwd)
+PYFILES:=$(shell find ${PACKAGE_DIR} -name '*.py')
+BINFILES:=$(ls bin/)
+
+DOMAIN_NAME=pyproject
+MAINTAINER_EMAIL=Martin Halder <martin.halder@gmail.com>
 
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
@@ -26,9 +32,20 @@ help:
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "  pot        to create the pot file for translations
 
 clean:
 	-$(MAKE) -C doc clean
+	-rm -rf i18n/*.pot
 
 html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man texinfo info gettext changes linkcheck doctest:
 	PYTHONPATH=$(PROJECT_DIR) $(MAKE) -C doc $@
+
+pot:
+	echo $(PYFILES) $(BINARY_FILES) | xargs \
+		xgettext --package-name "$(DOMAIN_NAME)" \
+		--msgid-bugs-address "$(MAINTAINER_EMAIL)" \
+		--copyright-holder "$(MAINTAINER_EMAIL)" \
+		--from-code UTF-8 --sort-by-file --add-comments=i18n: \
+		-d $(DOMAIN_NAME) -p i18n -o ${DOMAIN_NAME}.pot
+	$(PYHTON) i18n/posplit i18n/${DOMAIN_NAME}.pot

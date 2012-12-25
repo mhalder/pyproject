@@ -132,6 +132,7 @@ setup(name='pyproject',
       url='https://github.com/mhalder/pyproject',
       cmdclass={'build': InstallAndUpdateDataDirectory},
       packages=find_packages('pyproject'),
+      scripts=[os.path.join('bin', 'pyproject')],
       data_files=(find_data([('locale', 'locale'),
           ('doc/gen', 'share/doc/pyproject')])),
       )

@@ -11,9 +11,10 @@ Prerequisites
 
 you need the following packages installed:
 
-    1. sphinx
-    2. coverage
-    3. nose
+    1. python-sphinx
+    2. python-coverage
+    3. python-nose
+    4. gettext
 
 We recommend using virtualenv to use the latest versions of these packages
 without interfering with the locally installed packages.

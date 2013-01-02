@@ -24,23 +24,23 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 # THE POSSIBILITY OF SUCH DAMAGE.
 #
-"""This is a very simple module.
+'''This is a very simple module.
 
     :module: simplemodule
     :moduleauthor: Martin Halder <martin.halder@gmail.com>
 
-"""
+'''
 
 from i18n import _
 
 
 class SimpleClass:
 
-    """Demonstrate class docstrings."""
+    '''Demonstrate class docstrings.'''
 
     def __init__(self, one=1, two=2):
 
-        """Set default attribute values only.
+        '''Set default attribute values only.
 
         This class does nothing except setting the
         default attributes.
@@ -52,19 +52,19 @@ class SimpleClass:
 
         :raises: nothing
 
-        """
+        '''
 
         self.one = one
         self.two = two
 
     def do_something(self, thing=1):
 
-        """simple useless function.
+        '''simple useless function.
 
         :param thing: some thing
-        :returns: 'three'
+        :returns: 'test'
         :raises: your salary
 
-        """
+        '''
 
         return _('test')

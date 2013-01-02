@@ -24,8 +24,8 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 # THE POSSIBILITY OF SUCH DAMAGE.
 #
-"""This is a very basic example of docstrings.
+'''This is a very basic example of docstrings.
 
     :note: only for demonstration
 
-"""
+'''

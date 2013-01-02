@@ -24,12 +24,12 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 # THE POSSIBILITY OF SUCH DAMAGE.
 #
-"""This is a test for the simplemodule
+'''This is a test for the simplemodule
 
     :module: test_simplemodule
     :moduleauthor: Martin Halder <martin.halder@gmail.com>
 
-"""
+'''
 
 from unittest import TestCase
 from pyproject.simplemodule import SimpleClass
@@ -37,11 +37,11 @@ from pyproject.simplemodule import SimpleClass
 
 class test_SimpleClass(TestCase):
 
-    """Test SimpleClass constructor."""
+    '''Test SimpleClass constructor.'''
 
     def test_constructor(self):
 
-        """Call constructor and check members."""
+        '''Call default constructor and check members.'''
 
         simple = SimpleClass()
         self.assertEqual(simple.one, 1)
@@ -49,15 +49,17 @@ class test_SimpleClass(TestCase):
 
     def test_constructor_with_values(self):
 
-        """Call constructor and check members."""
+        '''Call constructor and check members.'''
 
         simple = SimpleClass(3, 4)
         self.assertEqual(simple.one, 3)
         self.assertEqual(simple.two, 4)
 
+    '''Test SimpleClass do_something.'''
+
     def test_do_something(self):
 
-        """Call constructor and check members."""
+        '''Call do_something and check return value.'''
 
         simple = SimpleClass(3, 4)
         self.assertEqual(simple.do_something(), 'test')

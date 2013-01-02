@@ -3,7 +3,7 @@ PyProject
 =========
 
 PyProject provides a basic skeleton for new python projects including
-distutils, sphinx documentation, unittest and coverage using GPLv3.
+distutils, sphinx documentation, unittest and coverage using FreeBSD license.
 
 
 Prerequisites

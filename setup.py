@@ -98,7 +98,7 @@ class InstallAndUpdateDataDirectory(build):
     def build_mo(self):
         if not find_executable('msgfmt'):
             self.warn("msgfmt executable could not be found -> no "
-                    'translations will be built')
+                      'translations will be built')
         domain = self.distribution.metadata.name
         podir = 'i18n'
         if not os.path.isdir(podir):

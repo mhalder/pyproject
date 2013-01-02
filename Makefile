@@ -45,4 +45,4 @@ pot:
 	echo $(PYFILES) $(BINFILES) | xargs \
 		pygettext --add-location \
 		-d $(DOMAIN_NAME) -p i18n -o ${DOMAIN_NAME}.pot
-	$(PYHTON) i18n/posplit i18n/${DOMAIN_NAME}.pot
+	$(PYTHON) i18n/posplit i18n/${DOMAIN_NAME}.pot

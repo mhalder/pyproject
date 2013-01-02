@@ -43,6 +43,6 @@ html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf 
 
 pot:
 	echo $(PYFILES) $(BINFILES) | xargs \
-		pygettext --add-location \
+		xgettext --language=Python --add-location \
 		-d $(DOMAIN_NAME) -p i18n -o ${DOMAIN_NAME}.pot
 	$(PYTHON) i18n/posplit i18n/${DOMAIN_NAME}.pot

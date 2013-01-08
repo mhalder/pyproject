@@ -72,14 +72,18 @@ create distribution (source dist):
 
     1. create documentation (see above)
     2. create translations (see above)
-    3. run sdist::
+    3. run build::
+
+        ./setup.py build
+
+    4. run sdist::
 
         ./setup.py sdist
 
 test translations:
 
-    sdist creates the mo files for the translation. Now it is possible
-    to run the application with the translation files. Just set the LANG
-    environment variable::
+    `setup.py build` creates the mo files for the translation. Now it is 
+    possible to run the application with the translation files. Just set the 
+    `LANG` environment variable::
 
         LANG=de ./bin/pyproject

@@ -82,8 +82,8 @@ create distribution (source dist):
 
 test translations:
 
-    `setup.py build` creates the mo files for the translation. Now it is 
-    possible to run the application with the translation files. Just set the 
-    `LANG` environment variable::
+    ``setup.py build`` creates the mo files for the translation. Now it is
+    possible to run the application with the translation files. Just set the
+    ``LANG`` environment variable::
 
         LANG=de ./bin/pyproject
